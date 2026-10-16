@@ -1,12 +1,10 @@
-<!doctype html>
-<html lang="pt-PT">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+
+
 <title>A Minha Lista para Ver</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="theme-color" content="#e8ebf3" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0d1120" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#0a0612">
+<meta name="theme-color" content="#0a0612">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Figtree:wght@400;500;600;700;800&display=swap">
@@ -14,29 +12,27 @@
 /* Conceito: parede de cartazes. O cartaz é o cartão; o título vai por cima, em letra de marquise de cinema.
    Paleta: azul-acinzentado frio de dia, azul-noite de sala escura à noite, índigo como única cor de ação. */
 :root{
-  --bg:#e8ebf3;--card:#ffffff;--ink:#131a2f;--mute:#59607a;--line:#d2d7e6;
-  --acc:#4f3fe0;--acc-ink:#ffffff;--shadow:0 2px 12px rgba(19,26,47,.10);
-  --tt-anime:#ff86b3;--tt-serie:#86b6ff;--tt-filme:#ffc965;--star:#e2a018;
-  --s-por:#667189;--s-ver:#1d8a5a;--s-pausa:#a36a0a;--s-visto:#2d64c4;--s-aband:#a8392f;
+  --bg:#0a0612;--card:#15101f;--ink:#f1eaff;--mute:#a597c4;--line:#2b2040;
+  --acc:#a855f7;--acc-ink:#0a0612;--shadow:0 2px 18px rgba(0,0,0,.6);--star:#e9b8ff;
+  --s-por:#8b7fa8;--s-ver:#34d399;--s-pausa:#f0a73a;--s-visto:#8b8cff;--s-aband:#f0627a;
+  --tt-anime:#ff86d0;--tt-serie:#a9a0ff;--tt-filme:#ffc965;
   --f-display:"Bebas Neue",Impact,"Arial Narrow",sans-serif;
   --f-body:"Figtree",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --bg:#0d1120;--card:#161c31;--ink:#eef1fb;--mute:#98a1bd;--line:#29314f;
-  --acc:#8f82ff;--acc-ink:#0d1120;--shadow:0 2px 16px rgba(0,0,0,.45);--star:#f2b73a;
-  --s-por:#7d89a6;--s-ver:#2fa974;--s-pausa:#c0841a;--s-visto:#4a82e0;--s-aband:#c8504a;
-  color-scheme:dark;
+  --bg:#0a0612;--card:#15101f;--ink:#f1eaff;--mute:#a597c4;--line:#2b2040;
+  --acc:#a855f7;--acc-ink:#0a0612;--shadow:0 2px 18px rgba(0,0,0,.6);--star:#e9b8ff;
+  --s-por:#8b7fa8;--s-ver:#34d399;--s-pausa:#f0a73a;--s-visto:#8b8cff;--s-aband:#f0627a;
 }}
 :root[data-theme="dark"]{
-  --bg:#0d1120;--card:#161c31;--ink:#eef1fb;--mute:#98a1bd;--line:#29314f;
-  --acc:#8f82ff;--acc-ink:#0d1120;--shadow:0 2px 16px rgba(0,0,0,.45);--star:#f2b73a;
-  --s-por:#7d89a6;--s-ver:#2fa974;--s-pausa:#c0841a;--s-visto:#4a82e0;--s-aband:#c8504a;
-  color-scheme:dark;
+  --bg:#0a0612;--card:#15101f;--ink:#f1eaff;--mute:#a597c4;--line:#2b2040;
+  --acc:#a855f7;--acc-ink:#0a0612;--shadow:0 2px 18px rgba(0,0,0,.6);--star:#e9b8ff;
+  --s-por:#8b7fa8;--s-ver:#34d399;--s-pausa:#f0a73a;--s-visto:#8b8cff;--s-aband:#f0627a;
 }
 *{box-sizing:border-box}
 [hidden]{display:none!important}
 html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.45 var(--f-body)}
+body{margin:0;background:radial-gradient(900px 420px at 80% -80px,rgba(168,85,247,.28),transparent 70%),var(--bg);background-color:var(--bg);color:var(--ink);font:16px/1.45 var(--f-body)}
 .wrap{max-width:1100px;margin:0 auto;padding-block:18px 110px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 header{display:flex;flex-wrap:wrap;gap:12px 16px;align-items:flex-end;justify-content:space-between;margin:6px 0 10px}
 h1{font:400 clamp(2.6rem,8vw,4.4rem)/.88 var(--f-display);letter-spacing:.03em;margin:0;text-wrap:balance}
@@ -171,13 +167,13 @@ button,select,.chip,.sg{touch-action:manipulation}
 @media (max-width:640px) and (prefers-reduced-motion:no-preference){dialog[open]{animation:sheet .22s ease-out}}
 @keyframes sheet{from{transform:translateY(36px);opacity:0}}
 </style>
-</head>
-<body>
+
+
 <div class="wrap">
   <header>
     <h1>A Minha Lista<small>Animes, séries e filmes para ver. Escolhe, marca e dá nota.</small></h1>
     <div class="btns">
-      <button class="btn" id="btnSet" title="Chave TMDB (para filmes) e outras definições">Definições</button>
+      <button class="btn" id="btnSet" title="Chave OMDb (para filmes) e outras definições">Definições</button>
       <button class="btn" id="btnRandom" title="Sorteia entre os títulos Por ver e Em pausa (ou do estado que tiveres filtrado)">Surpreende-me</button>
       <button class="btn primary" id="btnAdd" title="Atalho: N">+ Adicionar</button>
     </div>
@@ -210,7 +206,7 @@ button,select,.chip,.sg{touch-action:manipulation}
     <button class="btn small" id="btnImport">Importar cópia</button>
     <input type="file" id="file" accept="application/json,.json" hidden>
   </div>
-  <footer>Os dados ficam guardados neste browser. Exporta de vez em quando para teres cópia de segurança. Sugestões e capas: Jikan, TVmaze e TMDB.</footer>
+  <footer>Os dados ficam guardados neste browser. Exporta de vez em quando para teres cópia de segurança. Sugestões e capas: Jikan, TVmaze e OMDb.</footer>
 </div>
 
 <dialog id="dlg">
@@ -264,10 +260,10 @@ button,select,.chip,.sg{touch-action:manipulation}
 <dialog id="setDlg">
   <form id="setForm" method="dialog" novalidate>
     <h2>Definições</h2>
-    <label>Chave da API TMDB (para filmes)
+    <label>Chave da API OMDb (para filmes)
       <input id="sKey" autocomplete="off" spellcheck="false" placeholder="Cola aqui a tua chave">
     </label>
-    <div class="meta">Fica guardada só neste browser e não entra nas cópias exportadas. Cria uma chave grátis em themoviedb.org (Definições, API). Anime e séries também têm sugestões sem chave (Jikan e TVmaze), mas os filmes precisam dela.</div>
+    <div class="meta">Fica guardada só neste browser e não entra nas cópias exportadas. Pede uma chave grátis em omdbapi.com/apikey.aspx (só precisa de email). Anime e séries também têm sugestões sem chave (Jikan e TVmaze), mas os filmes precisam dela.</div>
     <div class="err" id="sErr" role="alert"></div>
     <div class="btns" style="justify-content:flex-end">
       <button type="button" class="btn" id="sCancel">Cancelar</button>
@@ -296,15 +292,15 @@ button,select,.chip,.sg{touch-action:manipulation}
 (function(){
 "use strict";
 var KEY="lista-para-ver-v1";
-/* Podes colar a chave TMDB aqui, entre as aspas, ou (mais fácil) em Definições. */
-var TMDB_KEY_DEFAULT="";
+/* Podes colar a chave OMDb aqui, entre as aspas, ou (mais fácil) em Definições. */
+var OMDB_KEY_DEFAULT="";
 var STATUS=[["por","Por ver"],["ver","A ver"],["pausa","Em pausa"],["visto","Visto"],["aband","Abandonado"]];
 var TYPES=[["anime","Anime"],["serie","Série"],["filme","Filme"]];
 var SNAME={},TNAME={};
 STATUS.forEach(function(s){SNAME[s[0]]=s[1]});
 TYPES.forEach(function(t){TNAME[t[0]]=t[1]});
 
-var fMeta={title:"",img:"",year:0},tmdbKey="",sugT=null,sugN=0,sugAbort=null,sugList=[],sugIdx=-1;
+var fMeta={title:"",img:"",year:0},omdbKey="",sugT=null,sugN=0,sugAbort=null,sugList=[],sugIdx=-1;
 var items=[],memOnly=false,badData=false,lastRaw=null;
 var stickyId=null,fType="all",fStatus="all",editId=null,lastPick=null,lastShown=null,undoFn=null,toastT=null,spinT=null;
 
@@ -807,16 +803,16 @@ function demo(){
   toast("Exemplos adicionados.",restore(snap));
 }
 
-/* ---------- Sugestões online (Jikan, TVmaze, TMDB) e capas ---------- */
+/* ---------- Sugestões online (Jikan, TVmaze, OMDb) e capas ---------- */
 function safeImg(u){
   u=String(u==null?"":u).replace(/^http:\/\//,"https://");
-  return /^https:\/\/(cdn\.myanimelist\.net|static\.tvmaze\.com|image\.tmdb\.org)\/[^\s"'<>]{1,260}$/.test(u)?u:"";
+  return /^https:\/\/(cdn\.myanimelist\.net|static\.tvmaze\.com|m\.media-amazon\.com)\/[^\s"'<>]{1,260}$/.test(u)?u:"";
 }
 function cleanKey(k){return String(k||"").trim().replace(/[^A-Za-z0-9._-]/g,"").slice(0,600)}
 function loadKey(){
   var k="";
-  try{k=localStorage.getItem(KEY+"-tmdb")||""}catch(e){}
-  tmdbKey=cleanKey(k)||cleanKey(TMDB_KEY_DEFAULT);
+  try{k=localStorage.getItem(KEY+"-omdb")||""}catch(e){}
+  omdbKey=cleanKey(k)||cleanKey(OMDB_KEY_DEFAULT);
 }
 function metaFor(title){
   return norm(title)===norm(fMeta.title)?{img:fMeta.img||"",year:fMeta.year||0}:{img:"",year:0};
@@ -834,14 +830,8 @@ function getJSON(url,headers,sig){
     return r.json();
   });
 }
-function tmdbReq(path,extra){
-  var url="https://api.themoviedb.org/3/"+path+(path.indexOf("?")<0?"?":"&")+extra,h=null;
-  if(tmdbKey.length>40)h={Authorization:"Bearer "+tmdbKey,accept:"application/json"};
-  else url+="&api_key="+encodeURIComponent(tmdbKey);
-  return {url:url,h:h};
-}
 function qJikan(q,sig){
-  return getJSON("https://api.jikan.moe/v4/anime?limit=6&sfw=true&q="+encodeURIComponent(q),null,sig).then(function(d){
+  return getJSON("https://api.jikan.moe/v4/anime?limit=5&sfw=true&order_by=popularity&sort=asc&q="+encodeURIComponent(q),null,sig).then(function(d){
     return ((d&&d.data)||[]).map(function(a){
       var im=a.images&&a.images.jpg&&(a.images.jpg.image_url||a.images.jpg.small_image_url);
       var y=a.year||(a.aired&&a.aired.prop&&a.aired.prop.from&&a.aired.prop.from.year)||0;
@@ -859,14 +849,11 @@ function qTvmaze(q,sig){
     });
   });
 }
-function qTmdb(q,sig){
-  var r=tmdbReq("search/multi?include_adult=false&language=pt-PT&query="+encodeURIComponent(q),"language=pt-PT");
-  return getJSON(r.url,r.h,sig).then(function(d){
-    return ((d&&d.results)||[]).filter(function(x){return x&&(x.media_type==="movie"||x.media_type==="tv")}).slice(0,6).map(function(x){
-      var tv=x.media_type==="tv";
-      var anime=tv&&x.original_language==="ja"&&Array.isArray(x.genre_ids)&&x.genre_ids.indexOf(16)>=0;
-      var pp=/^\/[A-Za-z0-9._-]+$/.test(x.poster_path||"")?"https://image.tmdb.org/t/p/w185"+x.poster_path:"";
-      return {k:tv?(anime?"anime":"serie"):"filme",title:String(x.title||x.name||""),year:num(String(x.release_date||x.first_air_date||"").slice(0,4),2100),img:safeImg(pp),total:0,src:"TMDB",tmdbTv:tv?x.id:0};
+function qOmdb(q,sig){
+  return getJSON("https://www.omdbapi.com/?type=movie&s="+encodeURIComponent(q)+"&apikey="+encodeURIComponent(omdbKey),null,sig).then(function(d){
+    if(d&&d.Response==="False"&&/api key/i.test(d.Error||"")){var e=new Error("key");e.status=401;throw e}
+    return ((d&&d.Search)||[]).slice(0,6).map(function(x){
+      return {k:"filme",title:String(x.Title||""),year:num(String(x.Year||"").slice(0,4),2100),img:safeImg(x.Poster),total:0,src:"OMDb"};
     });
   });
 }
@@ -876,37 +863,54 @@ function rank(r,q){
   if((" "+t).indexOf(" "+q)>=0)return 1;
   return 2;
 }
+var sugCache={};
+function mergeRes(res,q){
+  var qn=norm(q),all=[],seen={},out=[];
+  res.forEach(function(x){if(x&&x.ok)all=all.concat(x.r)});
+  all.forEach(function(r,i){
+    if(!r.title)return;
+    var key=norm(r.title).replace(/[^a-z0-9]/g,"")+(r.k==="filme"?"f":"s");
+    if(!key||seen[key])return;
+    seen[key]=1;r.o=i;r.rk=rank(r,qn);out.push(r);
+  });
+  out.sort(function(a,b){return a.rk-b.rk||a.o-b.o});
+  return out.slice(0,8);
+}
 function runSearch(q){
-  var my=++sugN;
+  var my=++sugN,ck=norm(q)+"|"+(omdbKey?1:0);
   if(sugAbort){try{sugAbort.abort()}catch(e){}}
+  if(sugCache[ck]){sugList=sugCache[ck].list;showSug(sugCache[ck].bad);return}
   var ac=typeof AbortController!=="undefined"?new AbortController():null;
   sugAbort=ac;
   var sig=ac?ac.signal:undefined;
-  var to=setTimeout(function(){if(ac){try{ac.abort()}catch(e){}}},8000);
-  showSugMsg("A procurar...");
+  var to=setTimeout(function(){if(ac){try{ac.abort()}catch(e){}}},6000);
+  if(!sugList.length)showSugMsg("A procurar...");
   var provs=[["Jikan",qJikan],["TVmaze",qTvmaze]];
-  if(tmdbKey)provs.splice(1,0,["TMDB",qTmdb]);
-  Promise.all(provs.map(function(p){
-    return p[1](q,sig).then(function(r){return {ok:true,r:r}},function(e){return {ok:false,e:e,n:p[0]}});
-  })).then(function(res){
-    clearTimeout(to);
-    if(my!==sugN)return;
-    if(!res.some(function(x){return x.ok})){
-      showSugMsg(location.protocol==="file:"?"Sem ligação às APIs. Confirma a internet e tenta outra vez.":"Esta página publicada bloqueia pedidos a serviços externos. Abre o ficheiro index.html no teu computador para ter sugestões e capas.");
-      return;
-    }
-    var badKey=res.some(function(x){return !x.ok&&x.n==="TMDB"&&x.e&&(x.e.status===401||x.e.status===403)});
-    var qn=norm(q),all=[],seen={},out=[];
-    res.forEach(function(x){if(x.ok)all=all.concat(x.r)});
-    all.forEach(function(r,i){
-      if(!r.title)return;
-      var key=norm(r.title).replace(/[^a-z0-9]/g,"")+(r.k==="filme"?"f":"s");
-      if(!key||seen[key])return;
-      seen[key]=1;r.o=i;r.rk=rank(r,qn);out.push(r);
+  if(omdbKey)provs.splice(1,0,["OMDb",qOmdb]);
+  var res=[],done=0,badKey=false;
+  provs.forEach(function(p,pi){
+    p[1](q,sig).then(function(r){return {ok:true,r:r}},function(e){
+      if(p[0]==="OMDb"&&e&&(e.status===401||e.status===403))badKey=true;
+      return {ok:false,e:e,n:p[0]};
+    }).then(function(x){
+      done++;
+      if(my!==sugN)return;
+      res[pi]=x;
+      var okAny=res.some(function(y){return y&&y.ok});
+      if(done===provs.length){
+        clearTimeout(to);
+        if(!okAny){
+          showSugMsg(location.protocol==="file:"?"Sem ligação às APIs. Confirma a internet e tenta outra vez.":"Esta página publicada bloqueia pedidos a serviços externos. Abre o ficheiro index.html no teu computador para ter sugestões e capas.");
+          return;
+        }
+        sugList=mergeRes(res,q);
+        sugCache[ck]={list:sugList,bad:badKey};
+        showSug(badKey);
+      }else if(okAny&&x.ok&&x.r.length){
+        sugList=mergeRes(res,q);
+        showSug(badKey,true);
+      }
     });
-    out.sort(function(a,b){return a.rk-b.rk||a.o-b.o});
-    sugList=out.slice(0,8);
-    showSug(badKey);
   });
 }
 function showSugMsg(msg){
@@ -915,15 +919,16 @@ function showSugMsg(msg){
   $("sug").hidden=false;
   $("fTitle").setAttribute("aria-expanded","true");
 }
-function showSug(badKey){
+function showSug(badKey,partial){
   if(!sugList.length){showSugMsg("Sem resultados. Podes guardar o título à mesma.");return}
   var h=sugList.map(function(r,i){
     return '<div class="sg" role="option" id="sg'+i+'" data-i="'+i+'" aria-selected="false">'+
       (r.img?'<img src="'+esc(r.img)+'" alt="" referrerpolicy="no-referrer">':'<span class="ph"></span>')+
       '<span><b>'+esc(r.title)+'</b><small>'+TNAME[r.k]+(r.year?" · "+r.year:"")+" · "+r.src+'</small></span></div>';
   }).join("");
-  if(badKey)h+='<div class="sgmsg">A chave TMDB não foi aceite. Verifica-a em Definições.</div>';
-  else if(!tmdbKey)h+='<div class="sgmsg">Para filmes, junta a chave TMDB em Definições.</div>';
+  if(badKey)h+='<div class="sgmsg">A chave OMDb não foi aceite. Verifica-a em Definições.</div>';
+  else if(partial)h+='<div class="sgmsg">A procurar mais...</div>';
+  else if(!omdbKey)h+='<div class="sgmsg">Para filmes, junta a chave OMDb em Definições.</div>';
   $("sug").innerHTML=h;$("sug").hidden=false;sugIdx=-1;
   $("fTitle").setAttribute("aria-expanded","true");
 }
@@ -948,8 +953,7 @@ function setType(k){
 function fillTotal(r){
   var url=null,h=null;
   if(r.tvmaze)url="https://api.tvmaze.com/shows/"+encodeURIComponent(r.tvmaze)+"/episodes";
-  else if(r.tmdbTv&&tmdbKey){var q=tmdbReq("tv/"+encodeURIComponent(r.tmdbTv),"language=pt-PT");url=q.url;h=q.h}
-  if(!url)return;
+    if(!url)return;
   var t=r.title;
   getJSON(url,h).then(function(d){
     var n=Array.isArray(d)?d.length:num(d&&d.number_of_episodes);
@@ -972,7 +976,7 @@ $("fTitle").addEventListener("input",function(){
   clearTimeout(sugT);
   var v=this.value.trim();
   if(v.length<2){closeSug();return}
-  sugT=setTimeout(function(){runSearch(v)},350);
+  sugT=setTimeout(function(){runSearch(v)},120);
 });
 $("fTitle").addEventListener("keydown",function(e){
   var open=!$("sug").hidden&&sugList.length>0;
@@ -987,18 +991,18 @@ $("sug").addEventListener("click",function(e){var o=e.target.closest(".sg");if(o
 dlg.addEventListener("cancel",function(e){if(!$("sug").hidden){e.preventDefault();closeSug()}});
 dlg.addEventListener("close",closeSug);
 
-/* Definições (chave TMDB) */
+/* Definições (chave OMDb) */
 var sdlg=$("setDlg");
-$("btnSet").onclick=function(){$("sKey").value=tmdbKey;$("sErr").textContent="";sdlg.showModal();setTimeout(function(){$("sKey").focus()},30)};
+$("btnSet").onclick=function(){$("sKey").value=omdbKey;$("sErr").textContent="";sdlg.showModal();setTimeout(function(){$("sKey").focus()},30)};
 $("sCancel").onclick=function(){sdlg.close()};
 $("setForm").addEventListener("submit",function(e){
   e.preventDefault();
   var k=cleanKey($("sKey").value);
   var failed=false;
-  try{if(k)localStorage.setItem(KEY+"-tmdb",k);else localStorage.removeItem(KEY+"-tmdb")}catch(x){failed=true}
-  tmdbKey=k||cleanKey(TMDB_KEY_DEFAULT);
+  try{if(k)localStorage.setItem(KEY+"-omdb",k);else localStorage.removeItem(KEY+"-omdb")}catch(x){failed=true}
+  omdbKey=k||cleanKey(OMDB_KEY_DEFAULT);
   sdlg.close();
-  toast(failed?"Este browser não deixa guardar a chave. Fica só até fechares a página.":(k?"Chave TMDB guardada.":"Chave TMDB removida."));
+  toast(failed?"Este browser não deixa guardar a chave. Fica só até fechares a página.":(k?"Chave OMDb guardada.":"Chave OMDb removida."));
 });
 
 /* ---------- Atalhos ---------- */
@@ -1026,5 +1030,7 @@ $("warnBad").hidden=!badData;
 render();
 })();
 </script>
-</body>
-</html>
+
+
+
+</body></html>
